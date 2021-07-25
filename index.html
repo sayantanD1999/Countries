@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="nav nav1">
+        <h2>Around the world</h2>
+        <i class="far fa-moon icons"  id="to_dark"  onclick="change_theme(this)"></i>
+        <!-- <i class="fas fa-sun  icons" id="to_light" onclick="change_theme(this)" ></i> -->
+        <!-- <i class="far fa-sun"></i> -->
+    </nav>
+
+    <div class="filters" >
+        
+        <div class="search_bar">
+            <span><i class="fas fa-search"></i></span>
+            <input type="search" name="" placeholder="Search" id="search" onkeydown="search(this.value)" ></input>    
+        </div>
+
+        <select name="region" class="region" onclick="filter_region(this.value)" >
+            <option id="option" value="">Region</option>
+            <!-- <option id="option" value="South America">South America</option>
+            <option id="option" value="Northern America">North America</option> -->
+            <option id="option" value="Americas">America</option>
+            <option id="option" value="Asia">Asia</option>
+            <option id="option" value="Europe">Europe</option>
+            <option id="option" value="Africa">Africa</option>
+            <option id="option" value="Oceania">Oceania</option> 
+        </select>
+    </div>
+
+    <div class="container">
+
+    </div>
+</body>
+
+</html>
