@@ -80,9 +80,8 @@ function change_theme(e) {
 
 function filter_region(e) {
     console.log(e);
-    if(e!="")
-    {
-        var divs = document.querySelectorAll(".card1");
+    var divs = document.querySelectorAll(".card1");
+    if (e != "all") {
         for (let i = 0; i < divs.length; i++) {
             var region = divs[i].querySelector("div .region2").dataset.sub_region;
             if (e == region) {
@@ -91,6 +90,11 @@ function filter_region(e) {
             else {
                 divs[i].style.display = "none";
             }
+        }
+    }
+    else {
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].style.display = "block";
         }
     }
 }
