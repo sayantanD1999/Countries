@@ -98,7 +98,7 @@ function filter_region(e) {
 function search(s) {
     console.log(s);
     var e = s.toLowerCase();
-    var divs = document.querySelectorAll(".card");
+    var divs = document.querySelectorAll(".card1");
     for (let i = 0; i < divs.length; i++) {
         let name = divs[i].querySelector("div .name").dataset.name.toLowerCase();
         let capital = divs[i].querySelector("div .capital").dataset.capital.toLowerCase();
