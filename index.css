@@ -105,27 +105,6 @@ nav>h2{
     color: rgb(92, 92, 92);
 }
 
-@media screen and (max-width:540px) {
-
-    .card{
-        width: 280px;
-    }
-        .card_dark{
-        width: 280px;
-    }
-
-    .img{
-        width: 250px !important;
-    }
-    #region{
-        width: 40%;
-    }
-    
-    #search{
-        margin-left: 0px;
-        width: 100%;
-    }
-}
 
 .card_dark{
     background-image: linear-gradient(to right, #434343 0%, black 100%);
@@ -153,3 +132,25 @@ nav>h2{
 }
 
 
+@media screen and (max-width:600px) {
+
+    .card{
+        width: 280px;
+    }
+
+    .card_dark{
+        width: 280px;
+    }
+
+    .img{
+        width: 250px !important;
+    }
+    #region{
+        width: 40%;
+    }
+    
+    #search{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
