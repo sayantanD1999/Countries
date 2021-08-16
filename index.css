@@ -110,6 +110,9 @@ nav>h2{
     .card{
         width: 280px;
     }
+        .card_dark{
+        width: 280px;
+    }
 
     .img{
         width: 250px !important;
